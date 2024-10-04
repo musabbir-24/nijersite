@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden; /* Prevent scrolling while loading */
+        }
+        .loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #282c34;
+            color: white;
+            font-size: 2rem;
+            z-index: 9999;
+        }
+        .hidden {
+            display: none;
+        }
+        .content {
+            display: none; /* Hide content initially */
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="loader">
+        Loading...
+    </div>
+
+    <div class="content">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Here are some of my graphic design works.</p>
+        <!-- Add your portfolio content here -->
+    </div>
+
+    <script>
+        // Simulate a loading delay
+        window.onload = function() {
+            setTimeout(() => {
+                document.querySelector('.loader').classList.add('hidden'); // Hide loader
+                document.querySelector('.content').style.display = 'block'; // Show content
+            }, 3000); // Adjust the time (in milliseconds) as needed
+        };
+    </script>
+</body>
+</html>
