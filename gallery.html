@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Musabbir Hossain | Photography Gallery</title>
+    <title>Gallery</title>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -30,12 +30,11 @@
             color: var(--light);
             min-height: 100vh;
             overflow-x: hidden;
-            font-family: Aligin;
         }
 
         @font-face {
-           font-family: Aligin; /* set name */
-           src: url(assests/Fonts/aligin.otf); /* url of the font */
+           font-family: 'Aligin'; /* set name */
+           src: url('assets/Fonts/aligin.otf'); /* url of the font - corrected path */
         }
 
         /* Background Animation */
@@ -189,6 +188,7 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             letter-spacing: 2px;
+            font-family: 'Aligin', sans-serif; /* Added Aligin font */
         }
 
         .gallery-subtitle {
@@ -197,6 +197,7 @@
             max-width: 600px;
             margin: 0 auto 2rem;
             font-weight: 300;
+            font-family: 'Aligin', sans-serif; /* Added Aligin font */
         }
 
         /* Filter Buttons */
